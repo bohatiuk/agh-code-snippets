@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: microservice-app-example
+  name: redis-queue
+spec:
+  selector:
+    matchLabels:
+      service: redis-queue
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        service: redis-queue
+    spec:
+      containers:
+      - env:
+        image: redis
+        name: redis-queue
+        ports:
+        - containerPort: 6379
+      restartPolicy: Always

@@ -1,0 +1,11 @@
+apiVersion: v2
+name: log-message-processor
+description: A Helm chart for log-message-processor
+
+type: application
+
+
+version: 0.1.0
+
+
+appVersion: "1.16.0"

@@ -1,0 +1,11 @@
+apiVersion: v2
+name: fronted
+description: A Helm chart for fronted
+
+type: application
+
+
+version: 0.1.0
+
+
+appVersion: "1.16.0"

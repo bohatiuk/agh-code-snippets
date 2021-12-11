@@ -1,0 +1,6 @@
+namespace: jenkins
+ingress:
+  class: nginx
+  host: host.example
+agents:
+  namespace: jdefault
